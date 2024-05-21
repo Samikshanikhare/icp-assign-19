@@ -1,10 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            height: 400px;
+            width: 350px;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 50px;
+            background-color: tomato;
+        }
+
+        .html {
+            height: 140px;
+            width: 150px;
+            padding: 20px;
+            margin-top: 30px;
+            margin-left: 70px;
+
+
+        }
+
+        .text {
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 120px;
+        }
+
+        .text2 {
+            font-size: 25px;
+            margin-left: 140px;
+
+        }
+
+        .text3 {
+            font-size: 25px;
+            margin-left: 110px;
+
+
+        }
+
+
+        .info {
+            padding: 20px;
+            margin-top: -15px;
+        }
+
+        .class2 {
+            margin-left: 1000px;
+        }
+
+        @media screen and (min-width:600px) and (max-width:745px) {
+            .card {
+                height: 200px;
+                width: 400px;
+            }
+
+            .html {
+                height: 70px;
+                width: 70px;
+                margin-left: 150px;
+            }
+
+            .text {
+                font-size: 35px;
+                margin-left: 150px;
+            }
+
+            .text2 {
+                font-size: 35px;
+                margin-left: 170px;
+
+            }
+
+            .text3 {
+                font-size: 35px;
+                margin-left: 130px;
+
+
+            }
+
+            .info {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width:150px) and (max-width:600px) {
+            .body {
+                justify-content: start;
+
+            }
+
+            .card {
+                height: 150px;
+                width: 200px;
+                margin-right: 50px;
+                background-color: beige;
+            }
+
+            .html {
+                height: 60px;
+                width: 60px;
+                margin-left: 50px;
+                margin-bottom: -10px;
+            }
+
+            .text {
+                font-size: 20px;
+                margin-left: 70px;
+
+            }
+
+            .text2 {
+                font-size: 20px;
+                margin-left: 80px;
+
+            }
+
+            .text3 {
+                font-size: 20px;
+                margin-left: 50px;
+
+
+            }
+
+
+
+            .info {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width:744px) and (max-width:919px) {
+            .body {
+                justify-content: start;
+
+            }
+
+            .card {
+                height: 300px;
+                width: 300px;
+                margin-right: 50px;
+            }
+
+            .html {
+                height: 140px;
+                width: 150px;
+                padding: 20px;
+                margin-top: 30px;
+                margin-left: 50px;
+
+
+            }
+
+
+            .text {
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 100px;
+            }
+
+            .text2 {
+                font-size: 35px;
+                margin-left: 120px;
+
+            }
+
+            .text3 {
+                font-size: 35px;
+                margin-left: 50px;
+
+
+            }
+
+
+            .info {
+                display: none;
+            }
+
+
+        }
+
+        @media screen and (min-width:920px) and (max-width:1100px) {
+            .body {
+                justify-content: start;
+            }
+
+            .card {
+                margin-right: 70px;
+                margin-left: 20px;
+            }
+
+            .text {
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 100px;
+            }
+
+            .text2 {
+                font-size: 35px;
+                margin-left: 120px;
+
+            }
+
+            .text3 {
+                font-size: 35px;
+                margin-left: 50px;
+
+
+            }
+
+        }
+    </style>
 </head>
+
 <body>
     <div class="body">
         <div class="card">
@@ -17,12 +238,11 @@
             </div>
 
 
-
         </div>
 
         <div class="card">
             <img src="css-3.png" class="html"><br>
-            <b class="text">CSS</b><br>&nbsp;&nbsp;
+            <b class="text2">CSS</b><br>&nbsp;&nbsp;
             <div class="info">
                 <i>Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and
                     styling of a document written in a markup language such as HTML or XML (including XML dialects such
@@ -32,9 +252,11 @@
 
         </div>
 
+
+
         <div class=" card">
             <img src="java-script.png" class="html"><br>
-            <b class="text">Java Script</b><br>&nbsp;&nbsp;
+            <b class="text3">Java Script</b><br>&nbsp;&nbsp;
             <div class="info">
                 <i>Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and
                     styling of a document written in a markup language such as HTML or XML (including XML dialects
@@ -45,6 +267,8 @@
         </div>
 
     </div>
-
 </body>
+
+
+
 </html>
